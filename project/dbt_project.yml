@@ -1,0 +1,4 @@
+name: dbtDuckDb
+profile: dbtDuckDb
+
+model-paths: ["models"]

@@ -1,0 +1,6 @@
+.venv
+/dbt_packages
+/logs
+/target
+.user
+dev.duckdb

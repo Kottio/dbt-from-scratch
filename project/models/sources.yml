@@ -1,0 +1,7 @@
+sources:
+  - name: jaffle_shop
+    config:
+      external_location: "jaffle-data/{name}.csv"
+    tables:
+      - name: raw_customers
+      - name: raw_orders
