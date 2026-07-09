@@ -2,5 +2,6 @@
 /dbt_packages
 /logs
 /target
-.user
+.user.yml
 dev.duckdb
+target/

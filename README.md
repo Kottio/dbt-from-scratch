@@ -3,7 +3,7 @@
 Apprends dbt de zéro avec **dbt Fusion** et **DuckDB** — pas de compte cloud,
 pas de Python, tout tourne en local.
 
-Repo compagnon de la série vidéo [KottioDev](LIEN_CHAINE).
+Repo compagnon de la série vidéo [KottioDev](https://www.youtube.com/@KottioDev).
 
 ## 📺 Vidéos
 
@@ -12,12 +12,33 @@ Repo compagnon de la série vidéo [KottioDev](LIEN_CHAINE).
 
 ## 🚀 Démarrage
 
-Suis la vidéo. La seule chose à télécharger depuis ce repo, c'est le dataset :
+Suis la vidéo.
+
+Installe DuckDb
+
+```bash
+curl https://install.duckdb.org | sh
+```
+
+```bash
+curl -fsSL https://public.cdn.getdbt.com/fs/install/install.sh | sh -s -- --update
+exec $SHELL
+dbt system update
+```
+
+On confirme que c'est bien installé.
+
+```bash
+dbt --version
+duckdb --version
+```
+
+La seule chose à télécharger depuis ce repo, c'est le dataset :
 
 ```bash
 mkdir jaffle-data
-curl -o jaffle-data/raw_orders.csv https://raw.githubusercontent.com/TONCOMPTE/dbt-from-scratch/main/data/raw_orders.csv
-curl -o jaffle-data/raw_customers.csv https://raw.githubusercontent.com/TONCOMPTE/dbt-from-scratch/main/data/raw_customers.csv
+curl -o jaffle-data/raw_orders.csv https://raw.githubusercontent.com/Kottio/dbt-from-scratch/main/data/jaffle-data/raw_orders.csv
+curl -o jaffle-data/raw_customers.csv https://raw.githubusercontent.com/Kottio/dbt-from-scratch/main/data/jaffle-data/raw_customers.csv
 ```
 
 Tout le reste, on l'écrit à la main — c'est le principe.
