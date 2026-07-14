@@ -1,7 +1,7 @@
-dbtDuckDb:
-  target: dev
+dbt_scratch:
+  target: duckdb_dev
   outputs:
-    dev:
+    duckdb_dev:
       type: duckdb
-      path: dev.duckdb
+      path: dev_db.duckdb
       threads: 4

@@ -1,4 +1,4 @@
-name: dbtDuckDb
-profile: dbtDuckDb
+name: dbt_project_scratch
+profile: dbt_scratch
 
 model-paths: ["models"]

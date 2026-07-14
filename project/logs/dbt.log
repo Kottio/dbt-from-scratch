@@ -430,3 +430,69 @@ alter view "dev"."main"."int_orders_done__dbt_tmp" rename to "int_orders_done"
 Finished 'run' successfully for target 'dev' [477ms]
 Processed: 2 models
 Summary: 2 total | 2 success
+==================== 2026-07-09T15:44:29.959512Z | 019f478d-4b04-71e3-9021-b345506ecbb2 ====================
+15:44:29.959673 [info ]: dbt-fusion 2.0.0-preview.196
+15:44:29.959900 [info ]: Started loading project
+15:44:29.960689 [info ]: Loading profiles.yml
+15:44:29.961441 [info ]: Finished loading project [  0.00s]
+15:44:29.961518 [info ]: Started debugging
+15:44:29.961551 [info ]: Debugging profile: dev
+15:44:29.961568 [info ]: Debugging dbt version: 2.0.0-preview.196
+15:44:29.961579 [info ]: Debugging platform: macos aarch64 (unix)
+15:44:29.961596 [info ]: Debugging adapter type: duckdb (remote)
+15:44:29.971298 [info ]: Debugging dependencies:
+  git: OK
+15:44:29.971384 [info ]: Debugging connection:
+  "path": "dev.duckdb"
+15:44:30.036846 [debug]: Query executed on node unknown:
+select 1 as id
+15:44:30.036940 [info ]: Debugging connection test: OK
+15:44:30.037395 [info ]: Debugged All checks passed!
+15:44:30.037424 [info ]: Finished debugging [  0.08s]
+15:44:30.709412 [info ]: 
+==================== Execution Summary =====================
+Finished 'debug' successfully for target 'dev' [749ms]
+==================== 2026-07-09T15:45:45.092079Z | 019f478e-7082-7e20-9453-e92887c52d8e ====================
+15:45:45.092161 [info ]: dbt-fusion 2.0.0-preview.196
+15:45:45.092295 [info ]: Started loading project
+15:45:45.093033 [info ]: Loading profiles.yml
+15:45:45.093564 [info ]: Finished loading project [  0.00s]
+15:45:45.093659 [info ]: Started debugging
+15:45:45.093694 [info ]: Debugging profile: dev
+15:45:45.093706 [info ]: Debugging dbt version: 2.0.0-preview.196
+15:45:45.093719 [info ]: Debugging platform: macos aarch64 (unix)
+15:45:45.093735 [info ]: Debugging adapter type: duckdb (remote)
+15:45:45.104000 [info ]: Debugging dependencies:
+  git: OK
+15:45:45.104081 [info ]: Debugging connection:
+  "path": "dev.duckdb"
+15:45:45.166255 [debug]: Query executed on node unknown:
+select 1 as id
+15:45:45.166358 [info ]: Debugging connection test: OK
+15:45:45.166824 [info ]: Debugged All checks passed!
+15:45:45.166850 [info ]: Finished debugging [  0.07s]
+15:45:45.747734 [info ]: 
+==================== Execution Summary =====================
+Finished 'debug' successfully for target 'dev' [655ms]
+==================== 2026-07-09T15:46:23.491055Z | 019f478f-0681-7143-87fd-c232850ab195 ====================
+15:46:23.491154 [info ]: dbt-fusion 2.0.0-preview.196
+15:46:23.491293 [info ]: Started loading project
+15:46:23.492071 [info ]: Loading profiles.yml
+15:46:23.492524 [info ]: Finished loading project [  0.00s]
+15:46:23.492587 [info ]: Started debugging
+15:46:23.492618 [info ]: Debugging profile: duckdb_dev
+15:46:23.492633 [info ]: Debugging dbt version: 2.0.0-preview.196
+15:46:23.492647 [info ]: Debugging platform: macos aarch64 (unix)
+15:46:23.492665 [info ]: Debugging adapter type: duckdb (remote)
+15:46:23.502057 [info ]: Debugging dependencies:
+  git: OK
+15:46:23.502116 [info ]: Debugging connection:
+  "path": "dev_db.duckdb"
+15:46:23.516243 [debug]: Query executed on node unknown:
+select 1 as id
+15:46:23.516395 [info ]: Debugging connection test: OK
+15:46:23.517480 [info ]: Debugged All checks passed!
+15:46:23.517532 [info ]: Finished debugging [  0.02s]
+15:46:24.148652 [info ]: 
+==================== Execution Summary =====================
+Finished 'debug' successfully for target 'duckdb_dev' [657ms]
