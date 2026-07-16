@@ -7,23 +7,26 @@ Repo compagnon de la série vidéo [KottioDev](https://www.youtube.com/@KottioDe
 
 ## 📺 Vidéos
 
-1. [dbt en 2026 : Setup from scratch (Fusion + DuckDB)](LIEN_VIDEO_1)
+1. [dbt en 2026 : Setup from scratch (Fusion + DuckDB)](https://youtu.be/M5krGvjzN4Q)
 2. _À venir — construction du projet complet : staging, intermediate, marts, tests_
 
 ## 🚀 Démarrage
-
-Suis la vidéo.
 
 Installe DuckDb
 
 ```bash
 curl https://install.duckdb.org | sh
+
+echo 'export PATH="$HOME/.duckdb/cli/latest:$PATH"' >> ~/.zshrc
+source ~/.zshrc
 ```
+
+Ensuite export le chemin dans ta configutration SHELL
+
+Installe dbt
 
 ```bash
 curl -fsSL https://public.cdn.getdbt.com/fs/install/install.sh | sh -s -- --update
-exec $SHELL
-dbt system update
 ```
 
 On confirme que c'est bien installé.
